@@ -52,7 +52,7 @@ function requestUpdatedData() {
                  
 function downloadCsvData() {
   //https://coronavirus.ohio.gov/static/dashboards/COVIDSummaryData.csv
-  var csvUrl = "https://coronavirus.ohio.gov/static/dashboards/COVIDSummaryData.csv";
+  var csvUrl = "https://coronavirus.ohio.gov/static/dashboards/COVIDDeathData_CountyOfResidence.csv";
   var csvContent = UrlFetchApp.fetch(csvUrl).getContentText();
   
   return Utilities.parseCsv(csvContent);
